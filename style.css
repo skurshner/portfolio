@@ -10,9 +10,33 @@
 body {
     font-family: 'Space Grotesk', sans-serif;
     color: var(--dark-blue);
+    font-size: 16px;
 }
 
-/* Header */
+/* Text Styles */
+
+h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin: 0px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 16px 0px;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* Header - Nav */
 
 nav {
     background-color: var(--light-gray);
@@ -20,7 +44,7 @@ nav {
 }
 
 .nav-wrapper {
-    width: 80%;
+    width: 85%;
     max-width: 1280px;
     height: 48px;
     margin: auto;
@@ -30,6 +54,7 @@ nav {
 
 .logo {
     height: 48px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
 }
 
 nav a {
@@ -37,17 +62,19 @@ nav a {
     padding: 12px 32px;
     color: var(--dark-blue);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 700;
     line-height: 16px;
     border: 4px solid var(--main-blue);
     border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
     transition: ease-in-out 200ms;
 }
 
 nav a:hover {
     background-color: var(--main-blue);
     color: white;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.12);
 }
 
 nav a:active {
@@ -55,9 +82,37 @@ nav a:active {
     border: 4px solid var(--dark-blue);
 }
 
+/* Header - Hero */
+
 .hero {
     background-color: var(--medium-gray);   
-    padding: 80px;
+    padding: 80px 0px;
     border-bottom: 8px solid #3B4454;
+}
+
+.hero-wrapper {
+    width: 85%;
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-image-container {
+    height: 240px;
+    width: 240px;
+    background-color: var(--main-blue);
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.profile-photo {
+    height: 240px;
+    width: 240px;
+    position: relative;
+    bottom: 8px;
+    right: 8px;
+
 }
 
