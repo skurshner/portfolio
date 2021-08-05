@@ -28,6 +28,22 @@ section header {
     text-align: center;
 }
 
+a { 
+    text-decoration: none;
+    border-radius: 8px;
+    transition: ease-in-out 200ms;
+    display: block;
+
+}
+a:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+a:active {
+    transform: scale(.95);
+}
+
 header hr {
     height: 8px;
     background-color: var(--main-blue);
@@ -88,6 +104,7 @@ li.fact {
 nav {
     background-color: var(--light-gray);
     padding: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.12);
 }
 
 .nav-wrapper {
@@ -108,19 +125,15 @@ nav a {
     background-color: var(--light-gray);
     padding: 12px 32px;
     color: var(--dark-blue);
-    text-decoration: none;
     font-size: 1.125rem;
     font-weight: 700;
     line-height: 16px;
     border: 4px solid var(--main-blue);
-    border-radius: 8px;
-    transition: ease-in-out 200ms;
 }
 
 nav a:hover {
     background-color: var(--main-blue);
     color: white;
-    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.12);
 }
 
 nav a:active {
@@ -175,7 +188,7 @@ nav a:active {
     margin: auto;
 }
 
-/* About Me Section - Facts */
+/* About Me Section - Facts List */
 
 .facts-box-container {
     width: 80%;
@@ -188,6 +201,7 @@ nav a:active {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
 }
 
 div.list-container {
@@ -203,7 +217,7 @@ ul.facts {
 
 li.fact {
     height: 48px;
-    padding: 16px 0 16px 80px;
+    padding: 16px 0 8px 80px;
 
 }
 
@@ -233,13 +247,55 @@ section#contact {
     width: 80%;
     max-width: 720px;
     margin: auto;
-    padding: 48px 0;
-    border: 4px solid var(--main-blue);
+    padding: 48px 0 40px 0;
+    border: 8px solid var(--main-blue);
     border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
 
 .contact-header-wrapper {
     width: 180px;
     margin-bottom: 40px;
+}
+
+a.contact-btn {
+    color: rgba(0, 0, 0, 0.0);
+    background-color: black;
+    width: 240px;
+    padding: 16px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span.hidden-text {
+    display: none;
+}
+
+img.btn-logo {
+    height: 32px;
+}
+
+a.contact-btn.linkedin {
+    background-color: #2867B2;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--dark-blue);
+    padding: 40px;
+    color: white;
+}
+
+footer p {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
