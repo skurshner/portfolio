@@ -11,4 +11,4 @@ This is my portfolio website for the HTML/CSS module of my Thinkful Engineering 
 ### Changelog
 Date | Version | Notes
 --- | --- | ---
-**2021-08-05** | `1.0` | Created first version of the portfolio with only HTML/CSS and no JavaScript. This is the version submitted for my 1st assignment.
+**2021-08-05** | `1.0` | Created first version of the portfolio with only HTML/CSS and (almost) no JavaScript. This is the version submitted for my 1st assignment.
