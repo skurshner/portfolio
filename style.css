@@ -212,7 +212,7 @@ nav button:active {
 }
 
 div.list-container {
-    margin: 40px auto 0px auto;
+    margin: 24px auto 0px auto;
 }
 
 ul.facts {
@@ -252,6 +252,7 @@ section#contact {
 
 .contact-box {
     width: 80%;
+    background-color: white;
     max-width: 720px;
     margin: auto;
     padding: 48px 0 40px 0;
