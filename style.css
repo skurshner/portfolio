@@ -1,0 +1,12 @@
+/* Header */
+
+nav {
+    background-color: #F7F7F8;
+    padding: 20px;
+}
+
+.hero {
+    background-color: #D8DADD;   
+    padding: 80px;
+    border-bottom: 8px solid #3B4454;
+}
