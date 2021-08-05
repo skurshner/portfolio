@@ -229,19 +229,19 @@ li.fact {
 }
 
 li.losangeles {
-    background: url('/images/icons/losangeles.png') no-repeat 8px 8px;
+    background: url('./images/icons/losangeles.png') no-repeat 8px 8px;
 }
 
 li.baby {
-    background: url('/images/icons/baby.png') no-repeat 8px 8px;
+    background: url('./images/icons/baby.png') no-repeat 8px 8px;
 }
 
 li.drums {
-    background: url('/images/icons/drum.png') no-repeat 8px 12px;
+    background: url('./images/icons/drum.png') no-repeat 8px 12px;
 }
 
 li.car {
-    background: url('/images/icons/car.png') no-repeat 8px 12px;
+    background: url('./images/icons/car.png') no-repeat 8px 12px;
 }
 
 /* Contact Me Section */
