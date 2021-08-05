@@ -246,7 +246,7 @@ li.car {
 
 /* Contact Me Section */
 
-section#contact {
+section.contact {
     background-color: var(--light-gray);
 }
 
