@@ -4,6 +4,7 @@
     --main-blue: #3b4454;
     --medium-gray: #d8dadd;
     --light-gray: #f7f7f8;
+    --white: #ffffff;
 }
 
 /* Global Styles*/
@@ -138,7 +139,7 @@ nav button {
 
 nav button:hover {
     background-color: var(--main-blue);
-    color: white;
+    color: var(--white);
     cursor: pointer;
     transform: scale(1.05);
     box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.12);
@@ -207,7 +208,7 @@ nav button:active {
     background-color: var(--main-blue);
     border-radius: 16px;
     padding: 40px 0;
-    color: white;
+    color: var(--white);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -255,7 +256,7 @@ section.contact {
 
 .contact-box {
     width: 80%;
-    background-color: white;
+    background-color: var(--white);
     max-width: 720px;
     margin: auto;
     padding: 48px 0 40px 0;
@@ -300,7 +301,7 @@ a.contact-btn.email {
 }
 
 span.email-button {
-    color: white;
+    color: var(--white);
     font-size: 24px;
     font-weight: bold;
 }
@@ -310,7 +311,7 @@ span.email-button {
 footer {
     background-color: var(--dark-blue);
     padding: 40px;
-    color: white;
+    color: var(--white);
 }
 
 footer p {
