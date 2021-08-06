@@ -17,7 +17,7 @@ body {
     font-size: 16px;
 }
 
-section {
+section, article {
     padding: 80px 0;
 }
 
@@ -27,7 +27,7 @@ article header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 40px auto 40px auto;
+    margin: 0 auto 40px auto;
 }
 
 a { 
@@ -293,6 +293,16 @@ img.btn-logo {
 
 a.contact-btn.linkedin {
     background-color: #2867B2;
+}
+
+a.contact-btn.email {
+    background-color: var(--main-blue);
+}
+
+span.email-button {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 /* Footer */
