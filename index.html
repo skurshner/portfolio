@@ -15,7 +15,7 @@
 <body>
     <!-- Page Header and Hero section -->
     <header>
-        <!-- Navigation - icon & button -->
+        <!-- Navigation -->
         <nav>
             <div class="nav-wrapper">
                 <img class="logo" src="./images/SKLogobasic.png" alt="Stephen Kurshner logo">
@@ -24,7 +24,6 @@
                     <a class="nav-item" href="#projects">Projects</a>
                     <a class="nav-item" href="#contact">Contact</a>
                 </div>
-                <!-- <button onclick="window.location.href='#contact'">Contact Me</button> -->
             </div>
         </nav>
         <!-- Hero Area -->
@@ -45,41 +44,59 @@
     <!-- Main section of page -->
     <main>
         <!-- About Me Section -->
-        <article class="about-section" id="about">
-            <div class="about-text-container">
-                <header class="about-header-wrapper">
-                    <h3>About Me</h3>
-                    <hr>
-                </header>
-                <!-- About Me Text -->
-                <div class="about-text-wrapper">
-                    <p>Hello, I’m Stephen, a full-stack developer with a background in UX/UI Design. 
-                        I've spent the last 7 years working as a designer in both agencies and early-stage startups. </p>
-                    <p>I've been fortunate to work closely with many awesome engineers. During my career, my interest in development 
-                        grew and grew until recently, when I decided it was time to make the leap and become a builder 
-                        rather than a designer.</p>
-                        <br>
+        <article id="about">
+            <div class="section-wrapper">
+                <div class="about-main-wrapper">
+                    <header class="section-header-wrapper">
+                        <h3>About Me</h3>
+                        <hr>
+                    </header>
+                    <!-- About Me Text -->
+                    <div class="about-text-wrapper">
+                        <p>Hello, I’m Stephen, a full-stack developer with a background in UX/UI Design. 
+                            I've spent the last 7 years working as a designer in both agencies and early-stage startups. </p>
+                        <p>I've been fortunate to work closely with many awesome engineers. During my career, my interest in development 
+                            grew and grew until recently, when I decided it was time to make the leap and become a builder 
+                            rather than a designer.</p>
+                            <br>
+                    </div>
                 </div>
-            </div>
-           
-        
-            <!-- Facts Box -->
-            <div class="facts-box-container">
-                <h4>More facts about myself</h4>
-                <div class="list-container">
-                    <div class="facts">
-                        <div class="fact"> <img src="images/icons/losangeles.png" alt="sun"> Grew up and lived in Los Angeles for most of my life</div>
-                        <div class="fact"> <img src="images/icons/baby.png" alt="baby crib">Recently became a first-time dad and avid coffee-drinker</div>
-                        <div class="fact"> <img src="images/icons/drum.png" alt="drumset">Been a drummer for over 20 years and love performing</div>
-                        <div class="fact"> <img src="images/icons/car.png" alt="racecar">Huge car enthusiast and enjoy watching Formula 1 racing</div>
+               
+                <!-- Facts Box -->
+                <div class="facts-box-container">
+                    <h4>More facts about myself</h4>
+                    <div>
+                        <div class="facts">
+                            <div class="fact"> <img src="images/icons/losangeles.png" alt="sun"> Grew up and lived in Los Angeles for most of my life</div>
+                            <div class="fact"> <img src="images/icons/baby.png" alt="baby crib">Recently became a first-time dad and avid coffee-drinker</div>
+                            <div class="fact"> <img src="images/icons/drum.png" alt="drumset">Been a drummer for over 20 years and love performing</div>
+                            <div class="fact"> <img src="images/icons/car.png" alt="racecar">Huge car enthusiast and enjoy watching Formula 1 racing</div>
+                        </div>
                     </div>
                 </div>
             </div>
+            
+        </article>
+
+        <!-- Projects Section -->
+        <article class="projects" id="projects">
+            <div class="section-wrapper">
+                <header class="section-header-wrapper">
+                    <h3>Projects</h3>
+                    <hr>
+                </header>
+                <div class="projects-wrapper">
+                    <div class="project-container">
+                        <div class="project-image-wrapper"></div>
+                        <div class="project-info-wrapper"></div>
+                    </div>
+                </div>
+            </div>
+            
         </article>
 
         <!-- Contact Section -->
-        <section class="contact" id="contact">
-            <!-- Contact Box -->
+        <!-- <section class="contact" id="contact">
             <div class="contact-box">
                 <header>
                     <div class="contact-header-wrapper">
@@ -93,7 +110,7 @@
                 <a class="contact-btn email" href="mailto:skurshner@gmail.com"><span class="email-button">Email Me!</span></a>
             </div>
             </div>
-        </section>
+        </section> -->
     </main>
     <footer>
         <p>© 2021 All Rights Reserved</p>
