@@ -2,6 +2,7 @@
 :root {
   --dark-blue: #0d192d;
   --main-blue: #3b4454;
+  --dark-gray: #c2c4c7;
   --medium-gray: #d8dadd;
   --light-gray: #f7f7f8;
   --white: #ffffff;
@@ -156,9 +157,9 @@ nav button:active {
   position: absolute;
   right: 0px;
   top: 0px;
-  width: 70%;
+  width: 75%;
   height: 100%;
-  background: #828385 none repeat scroll 0 0;
+  background: var(--dark-gray) none repeat scroll 0 0;
   clip-path: polygon(60% 0, 100% 0, 100% 100%, 35% 100%);
 }
 
