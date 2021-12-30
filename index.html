@@ -8,7 +8,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="style.css" >
 </head>
@@ -80,16 +80,41 @@
 
         <!-- Projects Section -->
         <article class="projects" id="projects">
-            <div class="section-wrapper">
+            <div class="section-wrapper projects-section">
                 <header class="section-header-wrapper">
                     <h3>Projects</h3>
                     <hr>
                 </header>
                 <div class="projects-wrapper">
-                    <div class="project-container">
-                        <div class="project-image-wrapper"></div>
-                        <div class="project-info-wrapper"></div>
-                    </div>
+                    <div class="project-background">
+                        <div class="project-container">
+                            <div class="project-image-wrapper">
+                                <img class="project-image" src="images/projects/seatable.png" alt="seatable screenshot">
+                                <div class="pill-wrapper">
+                                    <div class="pill">React</div>
+                                    <div class="pill">Node</div>
+                                    <div class="pill">Express</div>
+                                    <div class="pill">PostgreSQL</div>
+                                    <div class="pill">Bootstrap</div>
+                                    <div class="pill">CSS</div>
+                                </div>
+                            </div>
+                            <div class="project-info-wrapper">
+                                <div class="project-text-wrapper">
+                                    <h4>Seatable</h4>
+                                    <p>Seatable is a web app built to help restaurants manage their reservations. 
+                                        Users can create, update and search reservations as well as add tables in order to seat parties 
+                                        when they arrive. </p>
+                                    <p>I built both the back-end and front-end while keeping usability and simplicity 
+                                        in mind.</p>
+                                </div>
+                                <div class="project-button-row">
+                                    <a href="https://seatable-sk.herokuapp.com/" target="_blank"><button class="primary">Live App</button></a>
+                                    <a href="https://github.com/skurshner/restaurant-reservations" target="_blank"><button class="secondary">View Code</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
                 </div>
             </div>
             

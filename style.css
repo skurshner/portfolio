@@ -25,6 +25,39 @@ a {
   display: block;
 }
 
+button {
+  padding: 0.625rem 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.0275rem;
+  line-height: 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+button.primary {
+  background-color: var(--main-blue);
+  border: 0.125rem solid var(--main-blue);
+  color: white;
+}
+
+button.primary:hover {
+  background-color: var(--dark-blue);
+  border: 0.125rem solid var(--dark-blue);
+}
+
+button.secondary {
+  background-color: var(--white);
+  border: 0.125rem solid var(--dark-blue);
+  color: var(--dark-blue);
+}
+
+button.secondary:hover {
+  background-color: var(--medium-gray);
+  border: 0.125rem solid var(--dark-blue);
+  color: var(--dark-blue);
+}
+
 /* Text Styles */
 
 h1 {
@@ -40,13 +73,13 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-weight: 700;
   margin: 0.5rem 0;
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
   margin: 0;
 }
@@ -61,18 +94,6 @@ p {
   line-height: 160%;
 }
 
-p.p-small {
-  font-size: 1rem;
-  line-height: 1.25rem;
-  font-weight: 400;
-}
-
-p.caption {
-  font-size: 0.75rem;
-  font-weight: 700;
-  line-height: 1rem;
-}
-
 /* Header - Nav */
 
 nav {
@@ -80,7 +101,7 @@ nav {
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.12);
 }
 
-div.nav-wrapper {
+.nav-wrapper {
   width: 85%;
   max-width: 1280px;
   height: 5rem;
@@ -190,7 +211,7 @@ main {
   margin: 1rem 0;
   border: none;
   background-color: var(--dark-blue);
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
 }
 
 /* About Me Section */
@@ -204,8 +225,8 @@ main {
 
 .facts-box-container {
   background-color: var(--main-blue);
-  border-radius: 16px;
-  padding: 40px 24px;
+  border-radius: 1rem;
+  padding: 2.5rem 2rem;
   color: var(--white);
   flex: 1;
   display: flex;
@@ -213,6 +234,11 @@ main {
   align-items: center;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
   text-align: center;
+}
+
+.facts-box-container h4 {
+  font-size: 1.75rem;
+  margin: 0 0 1rem 0;
 }
 
 .fact {
@@ -231,11 +257,78 @@ main {
 
 /* Projects Section */
 article.projects {
-  background-color: var(--dark-gray);
+  background-color: var(--medium-gray);
+}
+
+.section-wrapper.projects-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .projects-wrapper {
+  margin: 2rem 0;
   display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.project-background {
+  position: relative;
+  background-color: var(--main-blue);
+  border-radius: 1rem;
+}
+
+.project-container {
+  background-color: var(--light-gray);
+  border-radius: 1rem;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  bottom: 0.5rem;
+  right: 0.5rem;
+}
+
+.project-image-wrapper {
+  background-color: var(--dark-blue);
+  padding: 1.5rem;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+img.project-image {
+  width: 100%;
+  box-shadow: 0px 0px 16px 4px rgba(7, 7, 8, 0.6);
+}
+
+.pill-wrapper {
+  margin: 0.5rem 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pill {
+  background-color: var(--light-gray);
+  padding: 0.275rem 0.75rem;
+  margin: 0.5rem 0.275rem;
+  border-radius: 1rem;
+}
+
+.project-info-wrapper {
+  padding: 2rem;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0 1rem 1rem 0;
+  border: 0.125rem solid var(--main-blue);
+}
+
+.project-button-row a {
+  display: inline;
+  margin: 0 1rem 0 0;
 }
 
 /* Contact Me Section */
@@ -382,6 +475,10 @@ footer p {
   .about-main-wrapper {
     margin: 0;
     width: 100%;
+  }
+
+  .facts-box-container {
+    padding: 2.5rem 1rem;
   }
 
   .fact {
