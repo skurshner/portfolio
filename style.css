@@ -217,7 +217,7 @@ main {
 /* About Me Section */
 
 .about-main-wrapper {
-  margin: 0 64px 0 24px;
+  margin: 0 4rem 0 0;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -421,6 +421,10 @@ footer p {
     width: 90%;
   }
 
+  .hero-wrapper {
+    width: 90%;
+  }
+
   .section-wrapper {
     width: 90%;
     flex-direction: column;
@@ -453,7 +457,6 @@ footer p {
   }
 
   .hero-wrapper {
-    width: 80%;
     flex-direction: column-reverse;
     align-items: start;
   }
