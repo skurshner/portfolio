@@ -19,10 +19,9 @@
         <nav>
             <div class="nav-wrapper">
                 <img class="logo" src="images/logotype.png" alt="Stephen Kurshner logo">
-                <div class="nav-items">
-                    <a class="nav-item" href="#about">About</a>
-                    <a class="nav-item" href="#projects">Projects</a>
-                    <a class="nav-item" href="#contact">Contact</a>
+                <div class="logos-wrapper">
+                    <a href="https://www.linkedin.com/in/stephenkurshner" target="_blank"><img class="social" src="images/logos/linkedin.png" alt="linkedin logo"></a>
+                    <a href="https://github.com/skurshner" target="_blank"><img class="social" src="images/logos/github.png" alt="github logo"></a>
                 </div>
             </div>
         </nav>
@@ -35,13 +34,13 @@
                     <p>Based in Ventura County, CA</p>
                     <div class="hero-buttons">
                         <div class="dropdown">
-                            <button onclick="openMenu()" class="primary dropbtn">Contact Me</button>
+                            <button onclick="openMenu()" class="primary contact-button" id="contact-button">Contact Me</button>
                             <div id="email-dropdown" class="dropdown-content" name="contact button">
                               <a href="mailto:skurshner@gmail.com">Send Me an Email</a>
-                              <a onclick="navigator.clipboard.writeText('skurshner@gmail.com')">Copy Email Address</a>
+                              <a onclick="copyEmail()">Copy Email Address</a>
                             </div>
                           </div>
-                        <button class="secondary" name="resume button">View My Resume</button>
+                        <a href="https://stephenkurshner.com/Stephen-Kurshner-Resume.pdf" target="_blank"><button class="secondary" name="resume button">View My Resume</button></a>
                     </div>
                 </div>
                 <div class="hero-image-container">
@@ -53,43 +52,9 @@
 
     <!-- Main section of page -->
     <main>
-        <!-- About Me Section -->
-        <article id="about">
-            <div class="section-wrapper">
-                <div class="about-main-wrapper">
-                    <header class="section-header-wrapper">
-                        <h3>About Me</h3>
-                        <hr>
-                    </header>
-                    <!-- About Me Text -->
-                    <div class="about-text-wrapper">
-                        <p>Hello, I’m Stephen, a full-stack developer with a background in UX/UI Design. 
-                            I've spent the last 7 years working as a designer in both agencies and early-stage startups. </p>
-                        <p>I've been fortunate to work closely with many awesome engineers. During my career, my interest in development 
-                            grew and grew until recently, when I decided it was time to make the leap and become a builder 
-                            rather than a designer.</p>
-                            <br>
-                    </div>
-                </div>
-               
-                <!-- Facts Box -->
-                <div class="facts-box-container">
-                    <h4>More facts about myself</h4>
-                    <div>
-                        <div class="facts">
-                            <div class="fact"> <img src="images/icons/losangeles.png" alt="sun"> Grew up and lived in Los Angeles for most of my life</div>
-                            <div class="fact"> <img src="images/icons/baby.png" alt="baby crib">Recently became a first-time dad and avid coffee-drinker</div>
-                            <div class="fact"> <img src="images/icons/drum.png" alt="drumset">Been a drummer for over 20 years and love performing</div>
-                            <div class="fact"> <img src="images/icons/car.png" alt="racecar">Huge car enthusiast and enjoy watching Formula 1 racing</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </article>
 
         <!-- Projects Section -->
-        <article class="projects" id="projects">
+        <article id="projects">
             <div class="section-wrapper projects-section">
                 <header class="section-header-wrapper">
                     <h3>Projects</h3>
@@ -205,9 +170,48 @@
 
         </article>
         
+        <!-- About Me Section -->
+        <article class="about" id="about">
+            <div class="section-wrapper">
+                <div class="about-main-wrapper">
+                    <header class="section-header-wrapper">
+                        <h3>About Me</h3>
+                        <hr>
+                    </header>
+                    <!-- About Me Text -->
+                    <div class="about-text-wrapper">
+                        <p>Hello, I’m Stephen, a full-stack developer with a background in UX/UI Design. 
+                            I've spent the last 7 years working as a designer in both agencies and early-stage startups. </p>
+                        <p>I've been fortunate to work closely with many awesome engineers. During my career, my interest in development 
+                            grew and grew until recently, when I decided it was time to make the leap and become a builder 
+                            rather than a designer.</p>
+                            <br>
+                    </div>
+                </div>
+               
+                <!-- Facts Box -->
+                <div class="facts-box-container">
+                    <h4>More facts about myself</h4>
+                    <div>
+                        <div class="facts">
+                            <div class="fact"> <img src="images/icons/losangeles.png" alt="sun"> Grew up and lived in Los Angeles for most of my life</div>
+                            <div class="fact"> <img src="images/icons/baby.png" alt="baby crib">Recently became a first-time dad and avid coffee-drinker</div>
+                            <div class="fact"> <img src="images/icons/drum.png" alt="drumset">Been a drummer for over 20 years and love performing</div>
+                            <div class="fact"> <img src="images/icons/car.png" alt="racecar">Huge car enthusiast and enjoy watching Formula 1 racing</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </article>
+
     </main>
     <footer>
-        <p>© 2021 All Rights Reserved</p>
+        <div class="logos-wrapper">
+            <a href="https://www.linkedin.com/in/stephenkurshner" target="_blank"><img class="social" src="images/logos/linkedin.png" alt="linkedin logo"></a>
+            <a href="https://github.com/skurshner" target="_blank"><img class="social" src="images/logos/github.png" alt="github logo"></a>
+        </div>
+        <p>© 2022 All Rights Reserved</p>
     </footer>
     <script src="script.js"></script>
 </body>
