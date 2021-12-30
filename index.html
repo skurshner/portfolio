@@ -31,8 +31,18 @@
             <div class="hero-wrapper">
                 <div class="hero-text">
                     <h1>Stephen Kurshner</h1>
-                    <h2>Full Stack Javascript Developer</h2>
+                    <h2>Full Stack Developer & UX Designer</h2>
                     <p>Based in Ventura County, CA</p>
+                    <div class="hero-buttons">
+                        <div class="dropdown">
+                            <button onclick="openMenu()" class="primary dropbtn">Contact Me</button>
+                            <div id="email-dropdown" class="dropdown-content" name="contact button">
+                              <a href="mailto:skurshner@gmail.com">Send Me an Email</a>
+                              <a onclick="navigator.clipboard.writeText('skurshner@gmail.com')">Copy Email Address</a>
+                            </div>
+                          </div>
+                        <button class="secondary" name="resume button">View My Resume</button>
+                    </div>
                 </div>
                 <div class="hero-image-container">
                     <img class ="profile-photo" src="./images/Profilephoto.png" alt="Stephen Kurshner headshot">
@@ -192,28 +202,13 @@
                     </div>  
                 </div>
             </div>
-            
-        </article>
 
-        <!-- Contact Section -->
-        <!-- <section class="contact" id="contact">
-            <div class="contact-box">
-                <header>
-                    <div class="contact-header-wrapper">
-                        <h3>Contact Me</h3>
-                        <hr>
-                    </div>
-            </header>
-            <div class="contact-buttons">
-                <a class="contact-btn github" href="http://www.github.com/skurshner" target="_blank"><img class="btn-logo github-logo" src="./images/logos/githublogo.png" alt="GitHub logo"><span class="hidden-text">Stephen Kurshner on Github</span></a>
-                <a class="contact-btn linkedin" href="http://www.linkedin.com/in/stephenkurshner" target="_blank"><img class="btn-logo linkedin-logo" src="./images/logos/linkedinlogo.png" alt="LinkedIn logo"><span class="hidden-text">Stephen Kurshner on LinkedIn</span></a>
-                <a class="contact-btn email" href="mailto:skurshner@gmail.com"><span class="email-button">Email Me!</span></a>
-            </div>
-            </div>
-        </section> -->
+        </article>
+        
     </main>
     <footer>
         <p>© 2021 All Rights Reserved</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
