@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stephen Kurshner is a Full Stack Javascript React Node HTML CSS Developer with UX Design experience.">
     <title>Stephen Kurshner's Portfolio</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,6 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="style.css" >
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-87N9XJ42QC"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-87N9XJ42QC');
+    </script>
 </head>
 <body>
     <!-- Page Header and Hero section -->
@@ -35,12 +45,12 @@
                     <div class="hero-buttons">
                         <div class="dropdown">
                             <button onclick="openMenu()" class="primary contact-button" id="contact-button">Contact Me</button>
-                            <div id="email-dropdown" class="dropdown-content" name="contact button">
+                            <div id="email-dropdown" class="dropdown-content">
                               <a href="mailto:skurshner@gmail.com">Send Me an Email</a>
-                              <a onclick="copyEmail()">Copy Email Address</a>
+                              <a onclick="copyEmail()">Copy My Email Address</a>
                             </div>
                           </div>
-                        <a href="https://stephenkurshner.com/Stephen-Kurshner-Resume.pdf" target="_blank"><button class="secondary" name="resume button">View My Resume</button></a>
+                        <a class="button secondary" href="https://stephenkurshner.com/Stephen-Kurshner-Resume.pdf" target="_blank" >View My Resume</a>
                     </div>
                 </div>
                 <div class="hero-image-container">
@@ -81,12 +91,12 @@
                                     <p>Seatable is a web app built to help restaurants manage their reservations. 
                                         Users can create, update and search reservations as well as add tables in order to seat parties 
                                         when they arrive. </p>
-                                    <p>I built both the back-end API and front-end while keeping usability and simplicity 
+                                    <p>I built both the Node/Express back-end API and React front-end while keeping usability and simplicity 
                                         in mind.</p>
                                 </div>
                                 <div class="project-button-row">
-                                    <a href="https://seatable-sk.herokuapp.com/" target="_blank"><button class="primary">Live App</button></a>
-                                    <a href="https://github.com/skurshner/restaurant-reservations" target="_blank"><button class="secondary">View Code</button></a>
+                                    <a class="button primary" href="https://seatable-sk.herokuapp.com/" target="_blank">Live App</a>
+                                    <a class="button secondary" href="https://github.com/skurshner/restaurant-reservations" target="_blank">View Code</a>
                                 </div>
                             </div>
                         </div>
@@ -108,11 +118,11 @@
                                     <p>We Love Movies is a site to look up movies, reviews, and theaters. 
                                         Users can look up movies, see the reviews and find out which theaters 
                                         are currently showing each movie. </p>
-                                    <p>I built the back-end RESTful API, server middleware and wrote database migrations.</p>
+                                    <p>I was responsible for the back-end RESTful API, server middleware and writing database migrations.</p>
                                 </div>
                                 <div class="project-button-row">
-                                    <a href="https://welovemovies-sk.herokuapp.com//" target="_blank"><button class="primary">Live App</button></a>
-                                    <a href="https://github.com/skurshner/WeLoveMovies" target="_blank"><button class="secondary">View Code</button></a>
+                                    <a class="button primary" href="https://welovemovies-sk.herokuapp.com//" target="_blank">Live App</a>
+                                    <a class="button secondary" href="https://github.com/skurshner/WeLoveMovies" target="_blank">View Code</a>
                                 </div>
                             </div>
                         </div>
@@ -132,11 +142,11 @@
                                     <h4>Flashcards</h4>
                                     <p>Flashcards is an app to help students learn by giving them the ability to create decks of 2-sided flashcards. 
                                         Once created, users can study the cards in the deck one at a time to test their knowledge. </p>
-                                    <p>I built the front-end, but am planning on improving the UX, UI, and building a back-end to add more functionality.</p>
+                                    <p>I built the React front-end, but am planning on improving the UX, UI, and building a back-end to add more functionality.</p>
                                 </div>
                                 <div class="project-button-row">
-                                    <a href="https://flashcard-app-sk.vercel.app//" target="_blank"><button class="primary">Live App</button></a>
-                                    <a href="https://github.com/skurshner/Flashcard_App" target="_blank"><button class="secondary">View Code</button></a>
+                                    <a class="button primary" href="https://flashcard-app-sk.vercel.app//" target="_blank">Live App</a>
+                                    <a class="button secondary" href="https://github.com/skurshner/Flashcard_App" target="_blank">View Code</a>
                                 </div>
                             </div>
                         </div>
@@ -159,8 +169,8 @@
                                     <p>This is built using vanilla Javascript and I created the algorithms to encode and decode messages.</p>
                                 </div>
                                 <div class="project-button-row">
-                                    <a href="https://skurshner.github.io/decoder-ring/" target="_blank"><button class="primary">Live App</button></a>
-                                    <a href="https://github.com/skurshner/decoder-ring" target="_blank"><button class="secondary">View Code</button></a>
+                                    <a class="button primary" href="https://skurshner.github.io/decoder-ring/" target="_blank">Live App</a>
+                                    <a class="button secondary" href="https://github.com/skurshner/decoder-ring" target="_blank">View Code</a>
                                 </div>
                             </div>
                         </div>
@@ -180,18 +190,28 @@
                     </header>
                     <!-- About Me Text -->
                     <div class="about-text-wrapper">
-                        <p>Hello, I’m Stephen, a full-stack developer with a background in UX/UI Design. 
-                            I've spent the last 7 years working as a designer in both agencies and early-stage startups. </p>
-                        <p>I've been fortunate to work closely with many awesome engineers. During my career, my interest in development 
-                            grew and grew until recently, when I decided it was time to make the leap and become a builder 
-                            rather than a designer.</p>
-                            <br>
+                        <p>Hi! Thank you for checking out my portfolio. To give a little background on me:</p>
+                        <p>Since 2015, I’ve been working as a user experience and product designer. I've worked on large web 
+                            projects at agencies as well as Saas products at early-stage startups. Throughout that time, I have been fortunate 
+                            to work with some great developers.</p>
+                        <p>As a young designer, I was always intimidated by code. However, as I grew and gained experience, my interest and curiosity 
+                            in software development ballooned. In the last few years of my design career, I started feeling an itch that design wasn’t 
+                            scratching. I was yearning for the ability to go into a codebase and add things or make changes myself, but I didn’t have 
+                            the knowledge. 
+                        </p>
+                        <p>Midway through 2021, I decided I couldn’t take it anymore. I had to take a leap and become a developer. I took the latter half of the year 
+                            off and focused my attention 100% on learning what I needed to pivot my career to development. Through a program at Thinkful, I 
+                            picked-up a ton. However, I know it’s only the beginning of my journey and there is so much more out there to explore. 
+                        </p>
+                        <p>My passion for technology burns strong, and I have a deep desire to be a part of a team, building awesome digital products for people. 
+                            At this time, I’m seeking that first opportunity, so if you like what you’ve seen, please don’t hesitate to reach out!
+                        </p>
                     </div>
                 </div>
                
                 <!-- Facts Box -->
                 <div class="facts-box-container">
-                    <h4>More facts about myself</h4>
+                    <h4>More facts about me</h4>
                     <div>
                         <div class="facts">
                             <div class="fact"> <img src="images/icons/losangeles.png" alt="sun"> Grew up and lived in Los Angeles for most of my life</div>
