@@ -1,239 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Stephen Kurshner is a Front-end Javascript React Node HTML CSS Tailwind Developer with UX Design experience.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Stephen Kurshner is a Front-end Javascript React Node HTML CSS Tailwind Developer with UX Design experience."
+    />
     <title>Stephen Kurshner's Portfolio</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Space+Grotesk:wght@400;600;700&display=swap" >
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="style.css" >
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Space+Grotesk:wght@400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-87N9XJ42QC"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-87N9XJ42QC"
+    ></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-87N9XJ42QC');
+      gtag("config", "G-87N9XJ42QC");
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Page Header and Hero section -->
     <header>
-        <!-- Navigation -->
-        <nav>
-            <div class="nav-wrapper">
-                <img class="logo" src="images/logotype.png" alt="Stephen Kurshner logo">
-                <div class="logos-wrapper">
-                    <a href="https://www.linkedin.com/in/stephenkurshner" target="_blank"><img class="social" src="images/logos/linkedin.png" alt="linkedin logo"></a>
-                    <a href="https://github.com/skurshner" target="_blank"><img class="social" src="images/logos/github.png" alt="github logo"></a>
+      <!-- Navigation -->
+      <nav>
+        <div class="nav-wrapper">
+          <img
+            class="logo"
+            src="images/logotype.png"
+            alt="Stephen Kurshner logo"
+          />
+          <div class="logos-wrapper">
+            <a
+              href="https://www.linkedin.com/in/stephenkurshner"
+              target="_blank"
+              ><img
+                class="social"
+                src="images/logos/linkedin.png"
+                alt="linkedin logo"
+            /></a>
+            <a href="https://github.com/skurshner" target="_blank"
+              ><img
+                class="social"
+                src="images/logos/github.png"
+                alt="github logo"
+            /></a>
+          </div>
+        </div>
+      </nav>
+      <!-- Hero Area -->
+      <section class="hero">
+        <div class="hero-wrapper">
+          <div class="hero-text">
+            <h1>Stephen Kurshner</h1>
+            <h2>Front-end & UX Developer</h2>
+            <p>Based in Southern CA</p>
+            <div class="hero-buttons">
+              <div class="dropdown">
+                <button
+                  onclick="openMenu()"
+                  class="primary contact-button"
+                  id="contact-button"
+                >
+                  Contact Me
+                </button>
+                <div id="email-dropdown" class="dropdown-content">
+                  <a href="mailto:skurshner@gmail.com">Send Me an Email</a>
+                  <a onclick="copyEmail()">Copy My Email Address</a>
                 </div>
+              </div>
+              <a
+                class="button secondary"
+                href="https://drive.google.com/file/d/1I8PfhfswvPHp-MebC31HlPcTTy1z6f61/view"
+                target="_blank"
+                >View My Resume</a
+              >
             </div>
-        </nav>
-        <!-- Hero Area -->
-        <section class="hero">
-            <div class="hero-wrapper">
-                <div class="hero-text">
-                    <h1>Stephen Kurshner</h1>
-                    <h2>Front-end & UX Developer</h2>
-                    <p>Based in Southern CA</p>
-                    <div class="hero-buttons">
-                        <div class="dropdown">
-                            <button onclick="openMenu()" class="primary contact-button" id="contact-button">Contact Me</button>
-                            <div id="email-dropdown" class="dropdown-content">
-                              <a href="mailto:skurshner@gmail.com">Send Me an Email</a>
-                              <a onclick="copyEmail()">Copy My Email Address</a>
-                            </div>
-                          </div>
-                        <a class="button secondary" href="https://stephenkurshner.com/Stephen-Kurshner-Resume.pdf" target="_blank" >View My Resume</a>
-                    </div>
-                </div>
-                <div class="hero-image-container">
-                    <img class ="profile-photo" src="./images/Profilephoto.png" alt="Stephen Kurshner headshot">
-                </div>
-            </div>
-        </section>  
+          </div>
+          <div class="hero-image-container">
+            <img
+              class="profile-photo"
+              src="./images/Profilephoto.png"
+              alt="Stephen Kurshner headshot"
+            />
+          </div>
+        </div>
+      </section>
     </header>
 
     <!-- Main section of page -->
     <main>
-
-        <!-- Projects Section -->
-        <article id="projects">
-            <div class="section-wrapper projects-section">
-                <header class="section-header-wrapper">
-                    <h3>Projects</h3>
-                    <hr>
-                </header>
-                <div class="projects-wrapper">
-                    <div class="project-background">
-                        <div class="project-container">
-                            <div class="project-image-wrapper">
-                                <img class="project-image" src="images/projects/seatable.png" alt="seatable screenshot">
-                                <div class="pill-wrapper">
-                                    <div class="pill">React</div>
-                                    <div class="pill">Node</div>
-                                    <div class="pill">Express</div>
-                                    <div class="pill">PostgreSQL</div>
-                                    <div class="pill">Knex</div>
-                                    <div class="pill">Bootstrap</div>
-                                    <div class="pill">CSS</div>
-                                </div>
-                            </div>
-                            <div class="project-info-wrapper">
-                                <div class="project-text-wrapper">
-                                    <h4>Seatable</h4>
-                                    <p>Seatable is a PERN-stack CRUD web app built to help restaurants manage their reservations. 
-                                        Users can create, update and search reservations as well as add tables in order to seat parties 
-                                        when they arrive. </p>
-                                    <p>I built both the Node/Express back-end RESTful API, and the React front-end, while keeping usability and simplicity 
-                                        in mind.</p>
-                                </div>
-                                <div class="project-button-row">
-                                    <a class="button primary" href="https://seatable-sk.herokuapp.com/" target="_blank">Live App</a>
-                                    <a class="button secondary" href="https://github.com/skurshner/restaurant-reservations" target="_blank">View Code</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-background">
-                        <div class="project-container reverse">
-                            <div class="project-image-wrapper">
-                                <img class="project-image" src="images/projects/flashcard.png" alt="flashcards screenshot">
-                                <div class="pill-wrapper">
-                                    <div class="pill">React</div>
-                                    <div class="pill">Tailwind CSS</div>
-                                </div>
-                            </div>
-                            <div class="project-info-wrapper">
-                                <div class="project-text-wrapper">
-                                    <h4>Flash!</h4>
-                                    <p>Flash! is an app to help students learn by giving them the ability to create decks of 2-sided flashcards. 
-                                        Once created, users can study the cards in the deck one at a time to test their knowledge. </p>
-                                    <p>I built the React front-end and styled it using Tailwind CSS. It is connected to a static JSON server at the moment, but I plan to create a functioning back-end.</p>
-                                </div>
-                                <div class="project-button-row">
-                                    <a class="button primary" href="https://flashcard-app-sk.vercel.app//" target="_blank">Live App</a>
-                                    <a class="button secondary" href="https://github.com/skurshner/flash" target="_blank">View Code</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
-
-                    <div class="project-background">
-                        <div class="project-container">
-                            <div class="project-image-wrapper">
-                                <img class="project-image" src="images/projects/welovemovies.png" alt="we love movies screenshot">
-                                <div class="pill-wrapper">
-                                    <div class="pill">Node</div>
-                                    <div class="pill">Express</div>
-                                    <div class="pill">PostgreSQL</div>
-                                    <div class="pill">Knex</div>
-                                </div>
-                            </div>
-                            <div class="project-info-wrapper">
-                                <div class="project-text-wrapper">
-                                    <h4>We Love Movies</h4>
-                                    <p>We Love Movies is a site to look up movies, reviews, and theaters. 
-                                        Users can look up movies, see the reviews and find out which theaters 
-                                        are currently showing each movie. </p>
-                                    <p>I was responsible for the back-end RESTful API, server middleware and writing database migrations.</p>
-                                </div>
-                                <div class="project-button-row">
-                                    <a class="button primary" href="https://welovemovies-sk.herokuapp.com//" target="_blank">Live App</a>
-                                    <a class="button secondary" href="https://github.com/skurshner/WeLoveMovies" target="_blank">View Code</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-background">
-                        <div class="project-container reverse">
-                            <div class="project-image-wrapper">
-                                <img class="project-image" src="images/projects/decoder.png" alt="decoder ring screenshot">
-                                <div class="pill-wrapper">
-                                    <div class="pill">HTML</div>
-                                    <div class="pill">CSS</div>
-                                    <div class="pill">Javascript</div>
-                                </div>
-                            </div>
-                            <div class="project-info-wrapper">
-                                <div class="project-text-wrapper">
-                                    <h4>Decoder Ring</h4>
-                                    <p>Decoder Ring is a fun little app that allows users to create coded messages using 3 different 
-                                        cypher methods. Once encoded, users can also use the app to decode the messages back again. </p>
-                                    <p>This is built using vanilla Javascript and I created the algorithms to encode and decode messages.</p>
-                                </div>
-                                <div class="project-button-row">
-                                    <a class="button primary" href="https://skurshner.github.io/decoder-ring/" target="_blank">Live App</a>
-                                    <a class="button secondary" href="https://github.com/skurshner/decoder-ring" target="_blank">View Code</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>  
+      <!-- Projects Section -->
+      <article id="projects">
+        <div class="section-wrapper projects-section">
+          <header class="section-header-wrapper">
+            <h3>Projects</h3>
+            <hr />
+          </header>
+          <div class="projects-wrapper">
+            <div class="project-background">
+              <div class="project-container">
+                <div class="project-image-wrapper">
+                  <img
+                    class="project-image"
+                    src="images/projects/seatable.png"
+                    alt="seatable screenshot"
+                  />
+                  <div class="pill-wrapper">
+                    <div class="pill">React</div>
+                    <div class="pill">Node</div>
+                    <div class="pill">Express</div>
+                    <div class="pill">PostgreSQL</div>
+                    <div class="pill">Knex</div>
+                    <div class="pill">Bootstrap</div>
+                    <div class="pill">CSS</div>
+                  </div>
                 </div>
+                <div class="project-info-wrapper">
+                  <div class="project-text-wrapper">
+                    <h4>Seatable</h4>
+                    <p>
+                      Seatable is a PERN-stack CRUD web app built to help
+                      restaurants manage their reservations. Users can create,
+                      update and search reservations as well as add tables in
+                      order to seat parties when they arrive.
+                    </p>
+                    <p>
+                      I built both the Node/Express back-end RESTful API, and
+                      the React front-end, while keeping usability and
+                      simplicity in mind.
+                    </p>
+                  </div>
+                  <div class="project-button-row">
+                    <a
+                      class="button primary"
+                      href="https://seatable-sk.herokuapp.com/"
+                      target="_blank"
+                      >Live App</a
+                    >
+                    <a
+                      class="button secondary"
+                      href="https://github.com/skurshner/restaurant-reservations"
+                      target="_blank"
+                      >View Code</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
 
-        </article>
-        
-        <!-- About Me Section -->
-        <article class="about" id="about">
-            <div class="section-wrapper">
-                <div class="about-main-wrapper">
-                    <header class="section-header-wrapper">
-                        <h3>About Me</h3>
-                        <hr>
-                    </header>
-                    <!-- About Me Text -->
-                    <div class="about-text-wrapper">
-                        <p>Hi! Thank you for checking out my portfolio.</p>
-                        <p>Since 2015, I’ve been working as a user experience and product designer. In that time, I worked on 
-                            large web projects at agencies as well as SaaS products at early-stage startups. </p>
-                        <p>As a young designer, I was always intimidated by code. However, as I grew and gained experience, 
-                            my interest and curiosity in software development ballooned. In the last few years of my design career, 
-                            I started yearning for the ability to go into a codebase and add things or make changes myself, 
-                            but I didn’t have the knowledge. 
-                        </p>
-                        <p>Midway through 2021, I decided it was time to make a change and become a developer. I took some time off and focused 
-                            my attention on learning everything I could about web development. Through a program at Thinkful, I learned a ton. 
-                            However, I know it’s only the beginning of my journey and I have so much more to learn.
-                        </p>
-                        <p>My passion for technology burns strong, and I have a deep desire to be a part of a team that builds awesome products. 
-                            At this time, I’m seeking that first opportunity, so if you like what you’ve seen, please don’t hesitate to reach out!
-                        </p>
-                    </div>
+            <div class="project-background">
+              <div class="project-container reverse">
+                <div class="project-image-wrapper">
+                  <img
+                    class="project-image"
+                    src="images/projects/flashcard.png"
+                    alt="flashcards screenshot"
+                  />
+                  <div class="pill-wrapper">
+                    <div class="pill">React</div>
+                    <div class="pill">Tailwind CSS</div>
+                  </div>
                 </div>
-               
-                <!-- Facts Box -->
-                <div class="facts-box-container">
-                    <h4>More facts about me</h4>
-                    <div>
-                        <div class="facts">
-                            <div class="fact"> <img src="images/icons/losangeles.png" alt="sun"> Grew up and lived in Los Angeles for most of my life</div>
-                            <div class="fact"> <img src="images/icons/baby.png" alt="baby crib">Recently became a first-time dad and coffee-drinker</div>
-                            <div class="fact"> <img src="images/icons/drum.png" alt="drumset">Been a drummer for over 20 years and love performing</div>
-                            <div class="fact"> <img src="images/icons/car.png" alt="racecar">Huge car enthusiast and enjoy watching Formula 1 racing</div>
-                        </div>
-                    </div>
+                <div class="project-info-wrapper">
+                  <div class="project-text-wrapper">
+                    <h4>Flash!</h4>
+                    <p>
+                      Flash! is an app to help students learn by giving them the
+                      ability to create decks of 2-sided flashcards. Once
+                      created, users can study the cards in the deck one at a
+                      time to test their knowledge.
+                    </p>
+                    <p>
+                      I built the React front-end and styled it using Tailwind
+                      CSS. It is connected to a static JSON server at the
+                      moment, but I plan to create a functioning back-end.
+                    </p>
+                  </div>
+                  <div class="project-button-row">
+                    <a
+                      class="button primary"
+                      href="https://flashcard-app-sk.vercel.app//"
+                      target="_blank"
+                      >Live App</a
+                    >
+                    <a
+                      class="button secondary"
+                      href="https://github.com/skurshner/flash"
+                      target="_blank"
+                      >View Code</a
+                    >
+                  </div>
                 </div>
+              </div>
             </div>
-            
-        </article>
 
+            <div class="project-background">
+              <div class="project-container">
+                <div class="project-image-wrapper">
+                  <img
+                    class="project-image"
+                    src="images/projects/welovemovies.png"
+                    alt="we love movies screenshot"
+                  />
+                  <div class="pill-wrapper">
+                    <div class="pill">Node</div>
+                    <div class="pill">Express</div>
+                    <div class="pill">PostgreSQL</div>
+                    <div class="pill">Knex</div>
+                  </div>
+                </div>
+                <div class="project-info-wrapper">
+                  <div class="project-text-wrapper">
+                    <h4>We Love Movies</h4>
+                    <p>
+                      We Love Movies is a site to look up movies, reviews, and
+                      theaters. Users can look up movies, see the reviews and
+                      find out which theaters are currently showing each movie.
+                    </p>
+                    <p>
+                      I was responsible for the back-end RESTful API, server
+                      middleware and writing database migrations.
+                    </p>
+                  </div>
+                  <div class="project-button-row">
+                    <a
+                      class="button primary"
+                      href="https://welovemovies-sk.herokuapp.com//"
+                      target="_blank"
+                      >Live App</a
+                    >
+                    <a
+                      class="button secondary"
+                      href="https://github.com/skurshner/WeLoveMovies"
+                      target="_blank"
+                      >View Code</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-background">
+              <div class="project-container reverse">
+                <div class="project-image-wrapper">
+                  <img
+                    class="project-image"
+                    src="images/projects/decoder.png"
+                    alt="decoder ring screenshot"
+                  />
+                  <div class="pill-wrapper">
+                    <div class="pill">HTML</div>
+                    <div class="pill">CSS</div>
+                    <div class="pill">Javascript</div>
+                  </div>
+                </div>
+                <div class="project-info-wrapper">
+                  <div class="project-text-wrapper">
+                    <h4>Decoder Ring</h4>
+                    <p>
+                      Decoder Ring is a fun little app that allows users to
+                      create coded messages using 3 different cypher methods.
+                      Once encoded, users can also use the app to decode the
+                      messages back again.
+                    </p>
+                    <p>
+                      This is built using vanilla Javascript and I created the
+                      algorithms to encode and decode messages.
+                    </p>
+                  </div>
+                  <div class="project-button-row">
+                    <a
+                      class="button primary"
+                      href="https://skurshner.github.io/decoder-ring/"
+                      target="_blank"
+                      >Live App</a
+                    >
+                    <a
+                      class="button secondary"
+                      href="https://github.com/skurshner/decoder-ring"
+                      target="_blank"
+                      >View Code</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- About Me Section -->
+      <article class="about" id="about">
+        <div class="section-wrapper">
+          <div class="about-main-wrapper">
+            <header class="section-header-wrapper">
+              <h3>About Me</h3>
+              <hr />
+            </header>
+            <!-- About Me Text -->
+            <div class="about-text-wrapper">
+              <p>Hi! Thank you for checking out my portfolio.</p>
+              <p>
+                Since 2015, I’ve been working as a user experience and product
+                designer. In that time, I worked on large web projects at
+                agencies as well as SaaS products at early-stage startups.
+              </p>
+              <p>
+                As a young designer, I was always intimidated by code. However,
+                as I grew and gained experience, my interest and curiosity in
+                software development ballooned. In the last few years of my
+                design career, I started yearning for the ability to go into a
+                codebase and add things or make changes myself, but I didn’t
+                have the knowledge.
+              </p>
+              <p>
+                Midway through 2021, I decided it was time to make a change and
+                become a developer. I took some time off and focused my
+                attention on learning everything I could about web development.
+                Through a program at Thinkful, I learned a ton. However, I know
+                it’s only the beginning of my journey and I have so much more to
+                learn.
+              </p>
+              <p>
+                My passion for technology burns strong, and I have a deep desire
+                to be a part of a team that builds awesome products. At this
+                time, I’m seeking that first opportunity, so if you like what
+                you’ve seen, please don’t hesitate to reach out!
+              </p>
+            </div>
+          </div>
+
+          <!-- Facts Box -->
+          <div class="facts-box-container">
+            <h4>More facts about me</h4>
+            <div>
+              <div class="facts">
+                <div class="fact">
+                  <img src="images/icons/losangeles.png" alt="sun" /> Grew up
+                  and lived in Los Angeles for most of my life
+                </div>
+                <div class="fact">
+                  <img src="images/icons/baby.png" alt="baby crib" />Recently
+                  became a first-time dad and coffee-drinker
+                </div>
+                <div class="fact">
+                  <img src="images/icons/drum.png" alt="drumset" />Been a
+                  drummer for over 20 years and love performing
+                </div>
+                <div class="fact">
+                  <img src="images/icons/car.png" alt="racecar" />Huge car
+                  enthusiast and enjoy watching Formula 1 racing
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
     </main>
     <footer>
-        <div class="logos-wrapper">
-            <a href="https://www.linkedin.com/in/stephenkurshner" target="_blank"><img class="social" src="images/logos/linkedin.png" alt="linkedin logo"></a>
-            <a href="https://github.com/skurshner" target="_blank"><img class="social" src="images/logos/github.png" alt="github logo"></a>
-        </div>
-        <p>© 2022 All Rights Reserved</p>
+      <div class="logos-wrapper">
+        <a href="https://www.linkedin.com/in/stephenkurshner" target="_blank"
+          ><img
+            class="social"
+            src="images/logos/linkedin.png"
+            alt="linkedin logo"
+        /></a>
+        <a href="https://github.com/skurshner" target="_blank"
+          ><img class="social" src="images/logos/github.png" alt="github logo"
+        /></a>
+      </div>
+      <p>© 2022 All Rights Reserved</p>
     </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
