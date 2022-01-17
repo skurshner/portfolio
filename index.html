@@ -20,6 +20,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -41,7 +42,7 @@
     <header>
       <!-- Navigation -->
       <nav>
-        <div class="nav-wrapper show-on-scroll">
+        <div class="nav-wrapper" data-aos="fade-in">
           <img
             class="logo"
             src="images/logotype.png"
@@ -67,13 +68,45 @@
       </nav>
       <!-- Hero Area -->
       <section class="hero">
-        <div class="hero-bg show-on-scroll"></div>
-        <div class="hero-wrapper show-on-scroll">
+        <div
+          class="hero-bg"
+          data-aos="fade"
+          data-aos-duration="1200"
+          data-aos-easing="ease-in-out"
+        ></div>
+        <div class="hero-wrapper">
           <div class="hero-text">
-            <h1>Stephen Kurshner</h1>
-            <h2>Front-end & UX Developer</h2>
-            <p>Based in Southern CA</p>
-            <div class="hero-buttons">
+            <h1
+              data-aos="fade-right"
+              data-aos-duration="800"
+              data-aos-delay="100"
+              data-aos-easing="ease-in-out"
+            >
+              Stephen Kurshner
+            </h1>
+            <h2
+              data-aos="fade-right"
+              data-aos-duration="800"
+              data-aos-delay="400"
+              data-aos-easing="ease-in-out"
+            >
+              Front-end & UX Developer
+            </h2>
+            <p
+              data-aos="fade-right"
+              data-aos-duration="800"
+              data-aos-delay="700"
+              data-aos-easing="ease-in-out"
+            >
+              Based in Southern CA
+            </p>
+            <div
+              class="hero-buttons"
+              data-aos="fade"
+              data-aos-duration="600"
+              data-aos-delay="1200"
+              data-aos-easing="ease-in-out"
+            >
               <div class="dropdown">
                 <button
                   onclick="openMenu()"
@@ -95,7 +128,13 @@
               >
             </div>
           </div>
-          <div class="hero-image-container">
+          <div
+            class="hero-image-container"
+            data-aos="fade-in"
+            data-aos-delay="300"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
+          >
             <img
               class="profile-photo"
               src="./images/Profilephoto.png"
@@ -111,12 +150,23 @@
       <!-- Projects Section -->
       <article id="projects">
         <div class="section-wrapper projects-section">
-          <header class="section-header-wrapper">
+          <header
+            class="section-header-wrapper"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-once="true"
+          >
             <h3>Projects</h3>
             <hr />
           </header>
           <div class="projects-wrapper">
-            <div class="project-background show-on-scroll">
+            <div
+              class="project-background"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+              data-aos-once="true"
+            >
               <div class="project-container">
                 <div class="project-image-wrapper">
                   <img
@@ -167,7 +217,13 @@
               </div>
             </div>
 
-            <div class="project-background show-on-scroll">
+            <div
+              class="project-background"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              data-aos-delay="50"
+              data-aos-once="true"
+            >
               <div class="project-container reverse">
                 <div class="project-image-wrapper">
                   <img
@@ -213,7 +269,13 @@
               </div>
             </div>
 
-            <div class="project-background show-on-scroll">
+            <div
+              class="project-background"
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="1200"
+              data-aos-once="true"
+            >
               <div class="project-container">
                 <div class="project-image-wrapper">
                   <img
@@ -259,7 +321,13 @@
               </div>
             </div>
 
-            <div class="project-background show-on-scroll">
+            <div
+              class="project-background"
+              data-aos-delay="50"
+              data-aos-duration="1200"
+              data-aos="fade-up"
+              data-aos-once="true"
+            >
               <div class="project-container reverse">
                 <div class="project-image-wrapper">
                   <img
@@ -310,8 +378,14 @@
 
       <!-- About Me Section -->
       <article class="about" id="about">
-        <div class="section-wrapper show-on-scroll">
-          <div class="about-main-wrapper">
+        <div class="section-wrapper">
+          <div
+            class="about-main-wrapper"
+            data-aos="fade-right"
+            data-aos-delay="100"
+            data-aos-duration="1200"
+            data-aos-once="true"
+          >
             <header class="section-header-wrapper">
               <h3>About Me</h3>
               <hr />
@@ -350,7 +424,13 @@
           </div>
 
           <!-- Facts Box -->
-          <div class="facts-box-container">
+          <div
+            class="facts-box-container"
+            data-aos="fade-left"
+            data-aos-delay="300"
+            data-aos-duration="1200"
+            data-aos-once="true"
+          >
             <h4>More facts about me</h4>
             <div>
               <div class="facts">
@@ -377,19 +457,28 @@
       </article>
     </main>
     <footer>
-      <div class="logos-wrapper">
-        <a href="https://www.linkedin.com/in/stephenkurshner" target="_blank"
-          ><img
-            class="social"
-            src="images/logos/linkedin.png"
-            alt="linkedin logo"
-        /></a>
-        <a href="https://github.com/skurshner" target="_blank"
-          ><img class="social" src="images/logos/github.png" alt="github logo"
-        /></a>
+      <div class="footer-wrapper">
+        <div class="logos-wrapper">
+          <a href="https://www.linkedin.com/in/stephenkurshner" target="_blank"
+            ><img
+              class="social"
+              src="images/logos/linkedin.png"
+              alt="linkedin logo"
+          /></a>
+          <a href="https://github.com/skurshner" target="_blank"
+            ><img
+              class="social"
+              src="images/logos/github.png"
+              alt="github logo"
+          /></a>
+        </div>
+        <p>© 2022 All Rights Reserved</p>
       </div>
-      <p>© 2022 All Rights Reserved</p>
     </footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

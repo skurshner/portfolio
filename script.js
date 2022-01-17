@@ -23,16 +23,3 @@ const copyEmail = () => {
 
   setTimeout(() => (sendButton.innerText = "Contact Me"), 2500);
 };
-
-// Page animations
-const toggleVisibleClass = elements =>
-  elements.forEach(element => {
-    element.target.classList.toggle("is-visible");
-  });
-
-const observer = new IntersectionObserver(toggleVisibleClass);
-
-const targets = document.querySelectorAll(".show-on-scroll");
-targets.forEach(target => {
-  observer.observe(target);
-});
